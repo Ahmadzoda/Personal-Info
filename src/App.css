@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #EEF5FF;
+    height: auto;
+}
+.content{
+    margin: auto;
+    background-color: white;
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+   align-content: center;
+}
+.content-left{
+    background-image: url(Pictures/photo_2023-05-17_17-54-38.jpg);
+    width: 30%;
+    height: 73vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+.left-left p{
+    width: 40px;
+    height: 40px;
+    background-color: #BEE2FC;
+    border-radius: 50%;
+    color: rgb(2, 2, 36);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.left-leftt p{
+    width: 40px;
+    height: 40px;
+   border: #BEE2FC 2px solid;
+    border-radius: 50%;
+    color: #BEE2FC;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.left-right p{
+    color: rgb(167, 176, 185);
+}
+.left-right h2{
+    color: #BEE2FC;
+}
+.right-text h1{
+    color: rgb(2, 2, 79);
+    font-size: 25px;
+    font-weight: 700;
+}
+.right-title p{
+    color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inp{
+    display: start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+.inp input{
+    width: 400px;
+    border: rgb(187, 185, 185) 1px solid;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.inp-p p{
+    color: rgb(1, 1, 41);
+    font-weight: 500;
+}
+.green{
+    background-color:rgb(3, 3, 50);
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   }
+   .green-text{
+        text-align: center;
+       padding-top: 7px;
+       display: flex;
+       justify-content: center;
+   }
+
+   
+@media only screen and (min-width:460px) and (max-width:640px){
+    .content{
+        display: inline;
+    }
+    .content-left{
+        width: 70%;
+        height: 100vh;
+    }
+    .right-text{
+        display: flex;
+        justify-content: center;
+    }
+    .right-text h1{
+        font-size: 40px;
+    }
+    .right-title{
+        display: flex;
+        justify-content: center;
+    }
+    .inp{
+        display: flex;
+        justify-content: center;
+    }
+    .inp-p{
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media only screen and (min-width:640px) and (max-width:800px){
+    .content{
+        display: inline;
+    }
+    .content-left{
+        width: 70%;
+        height: 100vh;
+    }
+    .right-text{
+        display: flex;
+        justify-content: center;
+    }
+    .right-text h1{
+        font-size: 40px;
+    }
+    .right-title{
+        display: flex;
+        justify-content: center;
+    }
+    .left{
+     padding-left: 100px;
+     padding-top: 50px;
+    }
+    .inp{
+        display: flex;
+        justify-content: center;
+    }
+    .inp-p{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px){
+  .content{
+    width: 750px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .content-right{
+    padding-right: 10px;
   }
 }
